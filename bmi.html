@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* body{
+            background: aqua;
+        } */
+        input[type=number] {
+            font-size: 30px;
+            margin: 20px;
+            /* background: rgb(14, 163, 76); */
+            padding: 20px;
+        }
+
+        button {
+            font-size: 30px;
+            padding: 20px;
+            align-items: center;
+            color: #2acd8c;
+            background: #000;
+            transition: all 1s;
+            margin: 1rem;
+            margin-left: 2rem;
+
+        }
+
+        button:hover {
+            background: #c80d74;
+            color: #99f406;
+            border-radius: 20rem;
+            transform: scale(1.2);
+        }
+
+        /* #solution{
+           margin: 20px;
+           padding: 20px;
+           height: 30px;
+           width: 20rem;
+           color: brown;
+           background: yellow;
+        } */
+
+
+        #underweight {
+            width: 8rem;
+            height: 100px;
+            background: rgb(247, 247, 4);
+            opacity: 0.1;
+            margin: 2rem;
+            margin-left: 20rem;
+
+
+        }
+
+        #normal {
+            width: 8rem;
+            height: 100px;
+            background: green;
+            opacity: 0.2;
+            margin: 2rem;
+
+        }
+
+        #overweight {
+            width: 8rem;
+            height: 100px;
+            background: red;
+            opacity: 0.2;
+            margin: 2rem;
+
+        }
+
+        input[id=age] {
+            width: 19rem;
+            height: 1rem;
+            color: rgb(216, 21, 158);
+            background: #0a0909;
+        }
+
+        input[id=height] {
+            width: 19rem;
+            height: 1rem;
+            color: blue;
+            background: #5fd59c;
+
+        }
+
+        input[id=weight] {
+            height: 1rem;
+            width: 19rem;
+            color: rgb(22, 27, 24);
+            background: #2acd8c;
+        }
+
+        .div {
+            margin-left: 25rem;
+        }
+
+        div[id=solution] {
+            height: 5rem;
+            width: 9rem;
+            color: #cef6e6;
+            background: rgb(81, 7, 231);
+            margin-left: 14rem;
+            margin-top: -8rem;
+
+        }
+
+        div[id=bmi] {
+            text-align: center;
+            color: #cef6e6;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* body {
+            border: 2px solid black;
+            background: #171515;
+        } */
+        #main{
+            background: #2f2b2b;
+            border: px solid rgb(234, 10, 10);
+
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="main">
+    <div id="bmi">BMI CALCULATOR</div>
+    <div class="div">
+
+        <input id="age" type="number" placeholder="Enter age"><br>
+        <input id="height" type="number" placeholder="Enter height"><br>
+        <input id="weight" type="number" placeholder="Enter weight"><br>
+        <div></div>
+        <button onclick="calculate()">Submit </button> <br><br><br>
+
+        <div id="solution">0</div>
+
+    </div>
+    <div style="display:flex ;">
+        <div id="underweight" >
+            <p style="margin: 1rem;">Underweight</p>
+        </div>
+        <div id="normal">
+            <p>Normal</p>
+        </div>
+        <div id="overweight">
+            <p>0verweight</p>
+        </div>
+    </div>
+</div>
+    <script src="bmi.js"></script>
+</body>
+
+</html>
